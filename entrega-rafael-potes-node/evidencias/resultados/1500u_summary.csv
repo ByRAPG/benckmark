@@ -1,0 +1,3 @@
+Label,# Samples,Average,Min,Max,Std. Dev.,Error %,Throughput,Received KB/sec,Sent KB/sec,Avg. Bytes
+POST /api/orders,41781,2025,77,10005,1256.80,0.80%,663.01,266.20,230.40,411.1
+TOTAL,41781,2025,77,10005,1256.80,0.80%,663.01,266.20,230.40,411.1

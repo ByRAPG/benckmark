@@ -1,0 +1,1 @@
+{"samples": 41781, "avg": 2025, "p90": 2119, "p95": 2783, "throughput": 663.01, "error_pct": 0.8, "errors_5xx": 0, "errors_socket": 336, "errors_other": 0, "top_error": "Non HTTP response code: java.net.SocketTimeoutException: Non HTTP response message: Read timed out"}
