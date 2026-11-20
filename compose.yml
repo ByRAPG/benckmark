@@ -1,0 +1,73 @@
+x-app-common: &app-common
+  env_file:
+    - .env
+  depends_on:
+    db:
+      condition: service_healthy
+
+services:
+  db:
+    image: postgres:16
+    container_name: db-orders
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "5433:5432"
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  go:
+    <<: *app-common
+    build:
+      context: ./go
+      dockerfile: Dockerfile
+    container_name: go-app
+    ports:
+      - "8081:8080"
+
+  java:
+    <<: *app-common
+    build:
+      context: ./java
+      dockerfile: Dockerfile
+    container_name: java-app
+    ports:
+      - "8082:8080"
+
+  node:
+    <<: *app-common
+    build:
+      context: ./node
+      dockerfile: Dockerfile
+    container_name: node-app
+    ports:
+      - "8083:8080"
+
+  python:
+    <<: *app-common
+    build:
+      context: ./python
+      dockerfile: Dockerfile
+    container_name: python-app
+    ports:
+      - "8084:8080"
+
+  rust:
+    <<: *app-common
+    build:
+      context: ./rust
+      dockerfile: Dockerfile
+    container_name: rust-app
+    ports:
+      - "8085:8080"
+
+volumes:
+  dbdata:
