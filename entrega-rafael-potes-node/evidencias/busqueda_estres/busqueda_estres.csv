@@ -1,0 +1,16 @@
+users,duration_s,samples,avg_ms,p90_ms,p95_ms,throughput,error_pct,errors_5xx,errors_socket,errors_other,top_error
+500,30,21565,590,716,732,703.61,0.0,0,0,0,
+1500,30,22524,1732,2060,2832,699.61,0.0,0,0,0,
+3000,30,24700,3405,10002,10002,674.72,14.55,0,3594,0,Non HTTP response code: java.net.SocketTimeoutException: Non HTTP response message: Read timed out
+2000,30,22276,2416,5303,8730,666.67,4.0,0,892,0,Non HTTP response code: java.net.SocketTimeoutException: Non HTTP response message: Read timed out
+2400,30,22273,2997,9642,10002,620.9,9.68,0,2156,0,Non HTTP response code: java.net.SocketTimeoutException: Non HTTP response message: Read timed out
+1760,30,22181,2081,2430,5984,681.44,1.47,0,327,0,Non HTTP response code: java.net.SocketTimeoutException: Non HTTP response message: Read timed out
+1620,30,22563,1901,2196,4485,698.67,0.98,0,220,0,Non HTTP response code: java.net.SocketTimeoutException: Non HTTP response message: Read timed out
+1560,30,22892,1812,2120,3022,712.3,0.49,0,112,0,Non HTTP response code: java.net.SocketTimeoutException: Non HTTP response message: Read timed out
+1520,30,21871,1807,2169,3230,678.13,0.04,0,8,0,Non HTTP response code: java.net.SocketTimeoutException: Non HTTP response message: Read timed out
+1540,30,21773,1910,2548,4168,663.18,0.82,0,178,0,Non HTTP response code: java.net.SocketTimeoutException: Non HTTP response message: Read timed out
+1500,30,21178,1842,2226,3399,659.13,0.27,0,58,0,Non HTTP response code: java.net.SocketTimeoutException: Non HTTP response message: Read timed out
+1400,30,22420,1637,1935,2011,703.31,0.0,0,0,0,
+1460,30,21876,1742,2077,2836,681.73,0.01,0,2,0,Non HTTP response code: java.net.SocketTimeoutException: Non HTTP response message: Read timed out
+1420,30,21349,1748,2079,2932,664.81,0.01,0,3,0,Non HTTP response code: java.net.SocketTimeoutException: Non HTTP response message: Read timed out
+1440,30,22344,1687,2019,2436,696.31,0.0,0,0,0,
