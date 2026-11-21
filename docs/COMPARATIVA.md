@@ -1,6 +1,7 @@
-# Comparativa grupal y conclusiones
+﻿# Comparativa grupal y conclusiones
 
 **Taller:** Benchmarking de APIs con Postgres usando JMeter
+**Integrantes:** Rafael Potes (Node.js + NestJS), Orlando Palma (Java + Spring Boot) y Humberto Llinás (Go y Python)
 **Repositorio:** https://github.com/lzayrox/benckmark
 **Fecha:** 20 de noviembre de 2026
 
